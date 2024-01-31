@@ -1,6 +1,6 @@
 import cloudinary, { UploadApiErrorResponse, UploadApiResponse } from 'cloudinary'
 
-interface CloudinaryUpload {
+export interface CloudinaryUpload {
   file: string
   public_id?: string
   overwrite?: boolean
