@@ -1,5 +1,11 @@
 import cloudinary, { UploadApiErrorResponse, UploadApiResponse } from 'cloudinary'
 
+cloudinary.v2.config({
+  cloud_name: 'duib0nenr',
+  api_key: '823463461377819',
+  api_secret: 'FCoVX-5IcvO8u53fW656hFQBzhA'
+});
+
 export interface CloudinaryUpload {
   file: string
   public_id?: string
