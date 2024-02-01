@@ -5,10 +5,10 @@ import { NotAuthorizedError } from './error-handler'
 const tokens: string[] = ['auth', 'seller', 'gig', 'search', 'buyer', 'chat', 'order', 'review']
 
 export function verifyGatewayRequest(req: Request, res: Response, next: NextFunction): void {
-  if (!req.headers?.gatewaytoken) {
+  if (!req.headers?.gatewayToken) {
     throw new NotAuthorizedError('Invalid request', 'verifyGatewayRequest() method: Request not coming from api gateway')
   }
-  const token: string = req.headers?.gatewaytoken as string
+  const token: string = req.headers?.gatewayToken as string
   if (!token) {
     throw new NotAuthorizedError('Invalid request', 'verifyGatewayRequest() method: Request not coming from api gateway')
   }
