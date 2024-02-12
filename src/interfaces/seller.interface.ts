@@ -44,7 +44,7 @@ export interface IEducation {
   _id?: string;
   country: string;
   university: string;
-  title: string;
+  degree: string;
   major: string;
   year: string;
 }
