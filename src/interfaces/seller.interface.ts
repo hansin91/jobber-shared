@@ -53,7 +53,7 @@ export interface ICertificate {
   [key: string]: string | number | undefined;
   _id?: string;
   name: string;
-  from: string;
+  institution: string;
   year: number | string;
 }
 
