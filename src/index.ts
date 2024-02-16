@@ -47,6 +47,7 @@ export {
   IOrderNotifcation,
   IOrderReview
 } from './interfaces/order.interface'
+export { DirectMessage } from './interfaces/queue.interface'
 export { IRatingCategories, IRatingCategoryItem, IRatingTypes, IReviewDocument, IReviewMessageDetails } from './interfaces/review.interface'
 export { IHitsTotal, IPaginateProps, IQueryList, IQueryString, ISearchResult, ITerm } from './interfaces/search.interface'
 export { SellerType, ICertificate, IEducation, IExperience, ILanguage, ISellerDocument } from './interfaces/seller.interface'
