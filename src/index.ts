@@ -35,7 +35,8 @@ export {
   IGigViewReviewsProps,
   IGigsProps,
   ISelectedBudget,
-  ISellerGig
+  ISellerGig,
+  ISearchGig
 } from './interfaces/gig.interface'
 export {
   IDeliveredWork,
