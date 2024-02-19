@@ -1,6 +1,7 @@
 import { ObjectId } from "mongoose";
 import { IRatingCategories, IReviewDocument } from "./review.interface";
 import { ISellerDocument } from "./seller.interface";
+import { IPaginateProps } from "./search.interface";
 
 export type GigType =
   | string
@@ -98,4 +99,12 @@ export interface IGigTopProps {
   category?: string;
   width: string;
   type: string;
+}
+
+export interface ISearchGig {
+  searchQuery: string;
+  paginate: IPaginateProps;
+  deliveryTime?: string;
+  min?: number;
+  max?: number;
 }
